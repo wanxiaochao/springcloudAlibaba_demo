@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: look-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        prefix: look-service
+    sentinel:
+      transport:
+        dashboard: localhost:7070
+        port: 8719
+  profiles:
+    active: dev
+server:
+  port: 10002
