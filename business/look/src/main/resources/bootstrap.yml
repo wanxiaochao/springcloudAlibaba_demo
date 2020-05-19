@@ -13,5 +13,8 @@ spring:
         port: 8719
   profiles:
     active: dev
+feign:
+  sentinel:
+    enabled: true
 server:
   port: 10002

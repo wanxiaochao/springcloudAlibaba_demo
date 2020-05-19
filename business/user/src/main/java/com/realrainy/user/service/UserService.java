@@ -8,4 +8,6 @@ public interface UserService {
 
     List<WpUser> findUser();
 
+    List<WpUser> findUserByIdIn(List<String>ids);
+
 }

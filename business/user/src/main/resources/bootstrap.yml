@@ -17,5 +17,10 @@ spring:
             server-addr: 127.0.0.1:8848
             data-id: ${spring.application.name}-sentinel
             rule-type: flow
+        ds2:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            data-id: ${spring.application.name}-sentinel-degrade
+            rule-type: degrade
   profiles:
     active: dev

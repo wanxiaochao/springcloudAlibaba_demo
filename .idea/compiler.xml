@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="business" />
         <module name="user" />
-        <module name="withpath" />
+        <module name="gateway" />
         <module name="look" />
+        <module name="business" />
+        <module name="withpath" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bom" target="1.8" />
       <module name="business" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="look" target="1.8" />
       <module name="user" target="1.8" />
       <module name="withpath" target="1.8" />
@@ -21,7 +24,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bom" options="-parameters" />
       <module name="business" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="look" options="-parameters" />
       <module name="user" options="-parameters" />
       <module name="withpath" options="-parameters" />
